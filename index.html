@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Buy The Way</title>
+   <link rel="icon" href="img/logo.png">
+    <style>
+        html,
+        body {
+            width=100% height: 100%;
+            margin: 0;
+            font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
+        }
+        .head_style{
+            padding: 0.5em;
+            font-size: 50px;
+            color: white;
+            background: url(img/head.jpg);
+            text-align: center;
+            
+        }
+   
+        
+        footer {
+            padding: 2em;
+            background: url(img/head.jpg);
+            text-align: center;
+            height: 100px;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+        
+        li a.active {
+            color: white;
+            background-color: #4CAF50;
+        }
+        
+        .container {
+            position: relative;
+            width: 30%;
+            left: 2.5%;
+            float: left;
+             top:60px;
+        }
+        
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color:bisque;
+        }
+        
+        .container:hover .overlay {
+            opacity: 0.8;
+        }
+        
+        .text {
+            color: black;
+            font-size: 4vm;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-70%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+        
+        .container2 {
+            position: relative;
+            width: 30%;
+            left: 5%;
+            float: left;
+             top:60px;
+        }
+        
+        .image2 {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+        .overlay2 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color:whitesmoke;
+        }
+        
+        .container2:hover .overlay2 {
+            opacity: 0.8;
+        }
+        
+        .text2 {
+            color: darkred;
+            font-size: 4vm;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-70%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+        
+        .container3 {
+            position: relative;
+            width: 30%;
+            left: 7.5%;
+            float: left;
+            top:60px;
+        }
+        
+        .image3 {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+        .overlay3 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color:saddlebrown;
+        }
+        
+        .container3:hover .overlay3 {
+            opacity: 0.8;
+        }
+        
+        .text3 {
+            color: white;
+            font-size: 4vm;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-70%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+        
+
+        .pic{
+            width: 100%;
+            text-align:center;
+        }
+        
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            top:20px;
+        }
+        
+        .d1 {
+            float: left;
+            padding-bottom: 30px;
+        }
+        
+        .map{
+           
+            width:100%;
+            text-align:center;
+            padding-top: 80px;
+            clear:both;
+            padding-bottom: 30px;
+        }
+        
+        .contect{
+            width:70%;
+            margin:0 auto;
+            background-color:#f8e9cd;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="contect">
+    <ul>
+        <li><a class="active" href="index.html">首頁</a></li>
+        <li><a href="item.html">精選商品</a></li>
+        <li><a href="forum.html">代購討論版</a></li>
+        <li><a href="service.html">客戶服務</a></li>
+        <li><a href="about.html">關於我們</a></li>
+    </ul>
+
+
+    <header id=header class=head_style>Buy The Way</header>
+
+
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade" >
+            <a href="item.html"><img class="pic" src="img/ro.jpg"></a>
+
+        </div>
+
+        <div class="mySlides fade">
+           <a href="item.html"><img  class="pic" src="img/kit.jpg"></a> 
+
+        </div>
+        <div class="mySlides fade">
+            <a href="item.html"><img class="pic" src="img/co.jpg"></a>
+
+        </div>
+
+    </div>
+    <br><br><br>
+    <hr width=90%;>
+    <div class="d1">
+        <div class="container">
+
+            <img src="img/coco.jpg" class="image">
+            <div class="overlay">
+                <div class="text">手工製作的藏心巧克力， 以高溫加熱再冷卻， 採用進口頂級可可， 與鮮奶油的絕佳比例造就濃厚又清脆的口感， 精選多樣台灣在地及進口食材， 皆以新鮮為原則， 入餡調製成各式獨特口味巧克力， 更不時推出結合創意與美味的驚奇之作。
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container2">
+
+            <img src="img/shoe.jpg" class="image2">
+            <div class="overlay2">
+                <div class="text2">Nike Air Footscape Woven Chukka，在相繼推出「Grey Wool」,「Black」和「Blue Denim」等配色之後，此番又迎來一雙簡約的「Light Bone」配色。設計上以灰白色麂皮結合尼龍材質製作鞋身，搭配招牌編織細節呈現復古街頭美感，最後搭配白色 Footscape 鞋底而成。
+                </div>
+
+            </div>
+        </div>
+        <div class="container3">
+
+            <img src="img/car.jpg" class="image3">
+            <div class="overlay3">
+                <div class="text3">福斯汽車，是一家總部位於德國狼堡的汽車製造公司，為福斯集團的核心企業及原始品牌，也是該集團最暢銷品牌及全球第一大汽車製造商。在德語中，Volks為人民之意，Wagen為汽車之意，因此，其全名之意即是「人民的汽車」。
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+    
+    
+    
+    <div class="map">
+    <hr width=90% >
+    <br>
+    <br><br>
+ <img  src="img/map.png" style="width:50; top:200px;clear:both;">
+   </div>
+
+    <footer>
+        <a href="http://www.w3.org/html/logo/">
+<img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+</a>
+   <br><br>
+  <p style="color:white;">BuyTheWay ©2017</p> 
+    </footer>
+
+
+</div>
+
+
+</body>
+
+</html>

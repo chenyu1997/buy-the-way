@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html, body{
+            height: 100%;
+            margin:0; 
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+           
+            background-color: #f3f3f3;       
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        li a.active {
+            color: white;
+            background-color: #4CAF50;
+        }
+    
+        .head_style{
+           
+            padding: 0.5em;
+            font-size: 50px;
+            color: white;
+           background: url(img/head.jpg);
+            text-align: center;
+            
+        }
+        
+        
+
+
+        .footer{
+            padding: 5px;
+            background: url(img/head.jpg);
+            width:100%;
+            height: 100px;
+            text-align:center;
+            color:ghostwhite;
+            
+           
+        }
+        
+        .info{
+            float: left;
+            width:50%;
+            height: 720px;
+            background-color: beige;
+            text-align: center;
+        }
+        
+        .chart{
+            background-color: bisque;
+            height: 720px;
+        }
+        .contact{
+            line-height: 30px;
+            text-align: left;
+            margin: 0;
+            width: 410px;
+            position: absolute;
+            top: 52%;
+            left: 30%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+        .contain{
+            line-height: 30px;
+            text-align: left;
+            margin: 0;
+            width: 30%;
+            position: absolute;
+            top: 58%;
+            left: 68%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+        
+         .contect{
+            width:70%;
+            margin:0 auto;
+        }
+</style>
+</head>
+<body>
+   <div class="contect">
+    <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="item.html">精選商品</a></li>
+        <li><a  href="forum.html">代購討論版</a></li>
+        <li><a class="active" href="service.html">客戶服務</a></li>
+        <li><a  href="about.html">關於我們</a></li>
+    </ul>
+    
+    <header id=header class=head_style>Buy The Way</header>
+    <div class="info">
+        <text class="contact">
+        客戶滿意度永遠是我們的第一優先
+        ，如您需要任何協助，<br>
+        歡迎透過右側表單或下列方式與我們聯絡：<br>
+        <hr width:50%>
+        24小時服務電話：0800-087-987(手機請撥02-09870978)<br>
+        電子郵件：servicebty@gmail.com<br>
+        服務信箱：110 臺北市信義區西村里8鄰信義路五段7號
+        </text>
+    </div>
+    <div class="chart">
+        <div class="contain">
+            姓名：<span  style="display:inline-block; width:32px;"></span><input size="20" id="i1"><br>
+            電子信箱：<input size="50" id="i2" ><br>
+            聯絡電話：<input size="25" id="i3" ><br>
+            內容：<span style="display:inline-block; width:32px;"></span><input size="70"  style="line-height: 15em;" ><br>
+            <span style="display:inline-block; width:450px; "></span><button onclick="show()">submit</button>
+        </div>
+    </div>
+    
+    
+    
+    
+    <footer class="footer">
+        <a href="http://www.w3.org/html/logo/">
+<img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+</a>
+        <br>
+       BuyTheWay ©2017
+    </footer>
+    
+   <script>
+       function show(){
+           setTimeout(function(){ alert("我們已收到您的請求!\n\n姓名："+document.getElementById("i1").value+"\n電子信箱："+document.getElementById("i2").value+"\n聯絡電話："+document.getElementById("i3").value);},500);
+       }
+    </script>
+</div>
+</body>
+</html>

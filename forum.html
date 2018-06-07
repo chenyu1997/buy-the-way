@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Buy The Way</title>
+   <link rel="icon" href="img/logo.png">
+    <style>
+        
+      html,
+        body {
+            width=100% height: 100%;
+            margin: 0;
+            font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+           
+            background-color: #f3f3f3;       
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        li a.active {
+            color: white;
+            background-color: #4CAF50;
+        }
+    
+        .head_style{
+            padding: 0.5em;
+            font-size: 50px;
+            color: white;
+            background: url(img/head.jpg);
+            text-align: center;
+            
+        }
+        
+        .d{
+            
+            clear: both;
+            background-color:beige
+            
+            
+        }
+        
+        .d1{
+            
+            float:left;
+            padding-bottom:30px;
+            
+        }
+        
+    /*japan*/
+        .container {
+            position: relative;
+            width: 20%;
+            left:10%;
+            top:10px;
+            float: left;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: orange;
+        }
+
+        .container:hover .overlay {
+            opacity: 0.5;
+        }
+
+        .text {
+            color: black;
+           font-size: 4vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+        
+        
+
+        
+        /*us*/
+        .container1:hover .overlay1 {
+            opacity: 0.5;
+        }
+    
+        .container1 {
+            position: relative;
+            width: 20%;
+            left:20%;
+            top:10px;
+            float:left;
+            
+        }
+
+        .text1 {
+            color: black;
+           font-size: 4vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+    
+        }
+        
+        .image1 {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay1 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: cyan;
+        }
+        
+        /*kr*/
+         .container2:hover .overlay2 {
+            opacity: 0.5;
+        }
+    
+        .container2 {
+            position: relative;
+            width: 20%;
+            left:30%;
+            top:10px;
+            float:left;
+            
+        }
+
+        .text2 {
+            color: black;
+            font-size: 4vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+    
+        }
+        
+        .image2 {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay2 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: springgreen;
+        }
+
+        /*hk*/
+         .container3:hover .overlay3 {
+            opacity: 0.5;
+        }
+    
+        .container3 {
+            position: relative;
+            width: 20%;
+            left:10%;
+           top:20px;
+            clear: left;
+            float:left;
+        }
+
+        .text3 {
+            color:white ;
+           font-size: 4vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+    
+        }
+        
+        .image3 {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay3 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: blueviolet;
+        }
+        
+        /*eu*/
+         .container4:hover .overlay4 {
+            opacity: 0.5;
+        }
+    
+        .container4 {
+            position: relative;
+            width: 20%;
+            left:20%;
+            top:20px;
+            float:left;
+        }
+
+        .text4 {
+            color: black;
+            font-size: 4vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+    
+        }
+        
+        .image4 {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay4 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: burlywood;
+        }
+        
+         /*simpson*/
+         .container5:hover .overlay5 {
+            opacity: 0.5;
+        }
+    
+        .container5 {
+            position: relative;
+            width: 20%;
+            right:10%;
+            top:20px;
+            float:right;
+        }
+
+        .text5 {
+            color: black;
+            font-size: 4vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+    
+        }
+        
+        .image5 {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay5 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: yellow;
+        }
+        
+        
+        * {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 80%;
+
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid black;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid grey;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+        .footer{
+            padding: 2px;
+            background: url(img/head.jpg);
+            width:100%;
+            height: 100px;
+            text-align:center;
+            color:ghostwhite;
+            
+           
+        }
+        
+        .contect{
+             width:70%;
+            margin:0 auto;
+   background-color:#f8e9cd;
+        }
+        
+</style>
+</head>
+<body>
+   <div class="contect">
+    <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="item.html">精選商品</a></li>
+        <li><a class="active" href="forum.html">代購討論版</a></li>
+        <li><a href="service.html">客戶服務</a></li>
+        <li><a  href="about.html">關於我們</a></li>
+    </ul>
+    
+    <header id=header class=head_style>Buy The Way</header><br>
+    <div class="d1">
+    <div class="container">
+        <img src="img/japan.jpg" class="image">
+        <div class="overlay">
+            <div class="text">日本</div>
+        </div>
+    </div>
+    
+    <div class="container1">
+        <img src="img/US.jpg" class="image1">
+        <div class="overlay1">
+            <div class="text1">美國</div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <img src="img/kr.jpg" class="image2">
+        <div class="overlay2">
+            <div class="text2">韓國</div>
+        </div>
+    </div>
+    
+    
+    <div class="container3">
+        <img src="img/hk.jpg" class="image3">
+        <div class="overlay3">
+            <div class="text3">香港</div>
+        </div>
+    </div>
+    
+    <div class="container4">
+        <img src="img/eu.jpg" class="image4">
+        <div class="overlay4">
+            <div class="text4">歐洲</div>
+        </div>
+    </div>
+    
+    <div class="container5">
+        <img src="img/simpson.jpg" class="image5">
+        <div class="overlay5">
+            <div class="text5">總覽</div>
+        </div>
+    </div>
+    </div>
+    
+   
+    <hr width=90%>
+    
+    <div class="d">
+    <h2 style="text-align:center;"><br>旅遊者資訊</h2>
+       
+    
+<div style="text-align:center">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" >
+     <button><h2>我要登記</h2></button>
+    </div>
+        
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:30%;">前往地</th>
+    <th style="width:30%;">名字</th>
+    <th style="width:40%">聯絡電話</th>
+  </tr>
+  <tr>
+    <td>Germany</td>
+    <td>邱聖揚</td>
+    <td>0900000001</td>
+  </tr>
+  <tr>
+    <td>US</td>
+    <td>周宸宇</td>
+    <td>0900000002</td>
+  </tr>
+  <tr>
+    <td>Australia</td>
+    <td>林佑澤</td>
+    <td>0900000003</td>
+  </tr>
+  <tr>
+    <td>Korea</td>
+    <td>廖晟佑</td>
+    <td>0900000004</td>
+  </tr>
+  <tr>
+    <td>Hongkong</td>
+    <td>香港阿傑</td>
+    <td>0900000005</td>
+  </tr>
+  <tr>
+    <td>Japan</td>
+    <td>陳昕</td>
+    <td>0900000006</td>
+  </tr>
+  <tr>
+    <td>Germany</td>
+    <td>湯和倫</td>
+    <td>0900000007</td>
+  </tr>
+  <tr>
+    <td>South Africa</td>
+    <td>聖凱</td>
+    <td>0900000008</td>
+  </tr>
+    <tr>
+    <td>China</td>
+    <td>Berry</td>
+    <td>0900000009</td>
+  </tr>
+    <tr>
+    <td>Canada</td>
+    <td>承翰</td>
+    <td>0900000010</td>
+  </tr>
+    <tr>
+    <td>India</td>
+    <td>政佳</td>
+    <td>0900000011</td>
+  </tr>
+    <tr>
+    <td>Thailand</td>
+    <td>林珮瑜</td>
+    <td>0900000012</td>
+  </tr>
+    <tr>
+    <td>KFC</td>
+    <td>趙伯堯</td>
+    <td>0900000013</td>
+  </tr>
+    
+    
+    
+</table>
+        </div>
+    
+    <footer class="footer">
+        <a href="http://www.w3.org/html/logo/">
+<img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+</a>
+        <br>
+       BuyTheWay ©2017
+    </footer>
+    
+   <script>
+    
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+</div>
+</body>
+</html>

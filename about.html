@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Buy The Way</title>
+   <link rel="icon" href="img/logo.png">
+    <style>
+        html,
+        body {
+            width=100% height: 100%;
+            margin: 0;
+            font-family: "Gill Sans","Gill Sans MT",Calibri,sans-serif;
+        }
+        
+        .column {
+            display: inline-block;
+            width: 22%;
+            margin-left:20px;
+            padding: 0 10px;
+        }
+        
+        .card {
+            box-shadow:0 5px 10px  black;
+            background-color: aliceblue;
+        }
+        
+        .container {
+            padding: 0 16px;
+        }
+        
+        .title {
+            color:brown;
+        }
+        
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        
+        .button:hover {
+            background-color: #555;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f3f3f3;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+        
+        li a.active {
+            color: white;
+            background-color: #4CAF50;
+        }
+        
+        .head_style {
+            padding: 0.5em;
+            font-size: 50px;
+            color: white;
+            background: url(img/head.jpg);
+            text-align: center;
+        }
+        .pic{
+            margin-left: 10%;
+            margin-top: 10%; 
+            width:80%;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .a {
+            display: inline-block;
+        }
+        
+        .about {
+            
+            color: white;
+            text-align: center;
+            background-color: rgb(123, 68, 35);
+            padding: 5px;
+            width: 40%;
+            margin-left: 30%;
+        }
+        
+        .ap {
+            text-align: center;
+            font-size: 17px;
+            width: 40%;
+            margin-left: 30%;
+        }
+      
+        .p {
+            line-height: 20px;
+            display:inline-block;
+            width: 45%;
+            margin-left: 7%;
+            font-size:100%;
+            margin-top: 30px;
+        }
+        
+        .footer {
+            padding: 2px;
+            background: url(img/head.jpg);
+            width: 100%;
+            height: 100px;
+            text-align: center;
+            color: ghostwhite;
+            
+        }
+        .contect{
+            width:70%;
+            margin:0 auto;
+            background-color:#f8e9cd;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="contect">
+    <ul>
+         <li><a href="index.html">首頁</a></li>
+        <li><a href="item.html">精選商品</a></li>
+        <li><a href="forum.html">代購討論版</a></li>
+        <li><a href="service.html">客戶服務</a></li>
+        <li><a class="active" href="about.html">關於我們</a></li>
+    </ul>
+
+    <header id=header class=head_style>Buy The Way</header>
+
+
+    <div class="a">
+        <h1 class="about">Buy The Way</h1>
+        <h2 class="ap">在這裡，您將不再是以逛網拍的模式去尋找想要的商品。<br>在這裡，您可以尋找您的專屬代購人。</h2>
+        <hr width=90%>
+       
+        <div class="p">
+        <p>在傳統的代購網中，人們主打逛網拍的形式去尋找想要代購的商品。但這是我們的想法與理念，以人為主，當您今天要去某個地方旅行，度假個幾天，您是否願意以抽成甚至順便的方式幫在世界另一端的人帶它所尋找的商品藉此賺點外快？如果願意，歡迎<a href="forum.html">立即體驗</a>！<br><br>當您今天正在尋找一樣特定物品，它不在美國，不在日本不在韓國，它在伊拉克，在南極，在那些一般代購網不會去的地方時，試試看我們的代購討論版，也許過幾天就有願意幫您代購的旅行者正要出發去那裏！</p>
+        </div>
+        <div style="width:10%;float: right;margin-right:20%;"><img src="img/by.png" style="width:100%;">
+        </div>
+    </div>
+<hr width=90%><br>
+    <div class="row">
+ <h1 class="about">About The Team</h1>
+       <br>
+        <div class="column">
+            <div class="card">
+                <img class="pic" src="img/sy.jpg">
+                <div class="container">
+                    <h2>邱聖揚</h2>
+                    <p class="title">CEO Founder</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                    <a href="https://www.facebook.com/"  target="_blank"><img src="img/fbb.png" style="width:50px;height:52px;margin-left:65px;"></a>
+                    <a href="https://www.instagram.com/"  target="_blank"><img src="img/ddd.png" style="width:48px;height:48px; "></a>
+                    
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img class="pic" src="img/ch.jpg">
+                <div class="container">
+                    <h2>周宸宇</h2>
+                    <p class="title">Art Director</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                     <a href="https://www.facebook.com/"  target="_blank"><img src="img/fbb.png" style="width:50px;height:52px;margin-left:65px;"></a>
+                    <a href="https://www.instagram.com/"  target="_blank"><img src="img/ddd.png" style="width:48px;height:48px; "></a>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="pic" src="img/lin.jpg">
+                <div class="container">
+                    <h2>林佑澤</h2>
+                    <p class="title">Designer</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                     <a href="https://www.facebook.com/"  target="_blank"><img src="img/fbb.png" style="width:50px;height:52px;margin-left:65px;"></a>
+                    <a href="https://www.instagram.com/"  target="_blank"><img src="img/ddd.png" style="width:48px;height:48px; "></a>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <img class="pic" src="img/liao.jpg">
+                <div class="container">
+                    <h2>廖晟佑</h2>
+                    <p class="title">Designer</p>
+                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p>example@example.com</p>
+                     <a href="https://www.facebook.com/"  target="_blank"><img src="img/fbb.png" style="width:50px;height:50px;margin-left:65px;"></a>
+                    <a href="https://www.instagram.com/"  target="_blank"><img src="img/ddd.png" style="width:48px;height:48px; "></a>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr width=90%>
+
+
+    <footer class="footer">
+        <a href="http://www.w3.org/html/logo/">
+            <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+        </a>
+        <br> BuyTheWay ©2017
+    </footer>
+
+</div>
+
+</body>
+</html>
